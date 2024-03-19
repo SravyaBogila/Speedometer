@@ -3,7 +3,7 @@ import {Component} from 'react'
 import './index.css'
 
 class Speedometer extends Component {
-  state: {speed: 0}
+  state = {speed: 0}
   onAcceleration = () => {
     if (this.speed < 200) {
       this.setState(prevState => ({speed: prevState.speed + 10}))
@@ -30,7 +30,10 @@ class Speedometer extends Component {
           alt="speedometer"
           className="image"
         />
-        <p className="text"> Speed Is {speed}mph </p>
+        <h1 className="text"> Speed is {speed}mph </h1>
+        <p className="para">
+          Min Limit is {speed}mph, Max Limit is {200}mph
+        </p>
         <div class="buttons-container">
           <button class="button-1" onClick={this.onAcceleration}>
             Accelerate

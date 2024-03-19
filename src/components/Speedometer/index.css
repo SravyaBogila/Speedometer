@@ -26,6 +26,12 @@
   font-size: 14px;
 }
 
+.para {
+  color: #cbd5e1;
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+
 .buttons-container {
   display: flex;
   flex-direction: row;
