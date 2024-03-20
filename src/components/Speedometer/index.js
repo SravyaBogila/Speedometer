@@ -35,10 +35,10 @@ class Speedometer extends Component {
           Min Limit is {speed}mph, Max Limit is {200}mph
         </p>
         <div class="buttons-container">
-          <button class="button-1" onClick={this.onAcceleration}>
+          <button type="button" class="button-1" onClick={this.onAcceleration}>
             Accelerate
           </button>
-          <button class="button-2" onClick={this.onBrake}>
+          <button type="button" class="button-2" onClick={this.onBrake}>
             Apply Brake
           </button>
         </div>
